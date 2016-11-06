@@ -26897,18 +26897,59 @@
 /* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(8);
 
 	var About = React.createClass({
-	  displayName: 'About',
+	  displayName: "About",
 
 	  render: function render() {
 	    return React.createElement(
-	      'h3',
+	      "div",
 	      null,
-	      'About Component'
+	      React.createElement("h1", { className: "text-centered" }),
+	      React.createElement(
+	        "p",
+	        { className: "text-centered" },
+	        "This is a weather application built on react. I have built it in order to learn some recat basics."
+	      ),
+	      React.createElement(
+	        "p",
+	        { className: "text-centered" },
+	        "Here a re some of the tools I have used:"
+	      ),
+	      React.createElement(
+	        "ul",
+	        null,
+	        React.createElement(
+	          "li",
+	          null,
+	          React.createElement(
+	            "a",
+	            { href: "https://facebook.github.io/react" },
+	            "React"
+	          )
+	        ),
+	        React.createElement(
+	          "li",
+	          null,
+	          React.createElement(
+	            "a",
+	            { href: "http://openweathermap.org" },
+	            "Open Weathwer Map api"
+	          )
+	        ),
+	        React.createElement(
+	          "li",
+	          null,
+	          React.createElement(
+	            "a",
+	            { href: "http://foundation.zurb.com/sites/docs" },
+	            "Foundation style"
+	          )
+	        )
+	      )
 	    );
 	  }
 	});
