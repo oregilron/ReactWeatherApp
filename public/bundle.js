@@ -26908,20 +26908,24 @@
 	    return React.createElement(
 	      "div",
 	      null,
-	      React.createElement("h1", { className: "text-centered" }),
+	      React.createElement(
+	        "h1",
+	        { className: "text-center" },
+	        "About"
+	      ),
 	      React.createElement(
 	        "p",
-	        { className: "text-centered" },
+	        { className: "text-center" },
 	        "This is a weather application built on react. I have built it in order to learn some recat basics."
 	      ),
 	      React.createElement(
 	        "p",
-	        { className: "text-centered" },
-	        "Here a re some of the tools I have used:"
+	        { className: "text-center" },
+	        "Here are some of the tools I have used:"
 	      ),
 	      React.createElement(
 	        "ul",
-	        null,
+	        { className: "text-center" },
 	        React.createElement(
 	          "li",
 	          null,
